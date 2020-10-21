@@ -1,7 +1,12 @@
 import pytest
 
-from simple_functions import my_sum
+from simple_function import my_sum
 
+def my_sum(iterable):
+    tot = 0
+    for i in iterable:
+        tot += i
+    return tot
 
 class TestSimpleFunctions(object):
     '''Class to test our simple functions are working correctly'''
